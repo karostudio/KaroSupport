@@ -1,0 +1,27 @@
+{
+    "name": "karo/support",
+    "description": "The SDK used to connect clients to karo support center",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Karo\\Support\\" : "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Yeganeh",
+            "email": "mamady83@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Karo\\Support\\KaroSupportServiceProvider"
+            ],
+            "aliases": {
+                "KaroSupport": "Karo\\Support\\KaroSupport"
+            }
+        }
+    }
+}
