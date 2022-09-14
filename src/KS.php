@@ -23,7 +23,7 @@ class KS
     {
 
 
-        $api_key = config('app.ks_api_key');
+        $api_key = config('karosupport.ks_api_key');
         if (!$api_key){
             abort(403, 'Invalid api key - KS Support');
         }
