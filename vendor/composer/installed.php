@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'c862b35c200c08493936a846e031c5d1e7ff1dff',
+    'reference' => '9a669b0f393d2fb0668a38ec182ad67aff7a6486',
     'name' => 'karo/support',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'c862b35c200c08493936a846e031c5d1e7ff1dff',
+      'reference' => '9a669b0f393d2fb0668a38ec182ad67aff7a6486',
     ),
   ),
 );

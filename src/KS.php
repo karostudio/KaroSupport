@@ -30,7 +30,7 @@ class KS
 
         return Http::withHeaders([
             'api-key' => $api_key
-        ])->post('http://karosupport.test/api/tickets/new', [
+        ])->post('https://supportapi.karo.studio/api/tickets/new', [
             'key' => $key,
             'name' => $name,
             'content' => $content,
