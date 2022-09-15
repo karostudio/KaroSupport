@@ -25,17 +25,19 @@ class KS
 
         $api_key = config('karosupport.api_key');
 
-        if (!$api_key){
+        if (!$api_key) {
             abort(403, 'Invalid api key - KS Support');
         }
 
-        return Http::withHeaders([
-            'api-key' => $api_key
-        ])->post('https://supportapi.karo.studio/api/tickets/new', [
-            'key' => $key,
-            'name' => $name,
-            'content' => $content,
-            'payload' => $payload,
-        ]);
+
+        return Http::acceptJson()
+            ->withToken($api_key)
+            ->post('https://supportapi.karo.studio/api/tickets/new', [
+                'key' => $key,
+                'name' => $name,
+                'content' => $content,
+                'payload' => $payload,
+            ]);
+
     }
 }
